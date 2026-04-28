@@ -8,7 +8,7 @@
 <meta property="og:title" content="Nassr Eddine El Himeur — Full-Stack Developer" />
 <meta property="og:description" content="Full-Stack Developer specializing in Spring Boot, Angular, React, and Docker. Based in Meknes, Morocco." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://nassreddine.dev" />
+<meta property="og:url" content="https://hir-aeth.github.io/portfolio/" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Nassr Eddine El Himeur — Full-Stack Developer" />
 <meta name="twitter:description" content="Full-Stack Developer specializing in Spring Boot, Angular, React, and Docker." />
@@ -17,9 +17,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-/* =========================================================
-   TOKENS — dark first, light overrides via [data-theme]
-   ========================================================= */
+
 :root {
   --bg: #0a0812;
   --bg-elev: #0f0b1a;
@@ -30,8 +28,8 @@
   --text: #ede9f8;
   --text-dim: #b0a6cc;
   --text-muted: #7a6e99;
-  --accent: #a855f7;       /* electric violet */
-  --accent-2: #6366f1;     /* indigo */
+  --accent: #a855f7;       
+  --accent-2: #6366f1;     
   --accent-soft: rgba(168, 85, 247, 0.14);
   --accent-glow: rgba(168, 85, 247, 0.40);
   --danger: #f87171;
@@ -62,9 +60,7 @@
   --shadow-md: 0 10px 24px -14px rgba(80,40,160,0.14);
 }
 
-/* =========================================================
-   BASE
-   ========================================================= */
+
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
@@ -124,7 +120,6 @@ section { padding: 120px 0; position: relative; }
   font-size: 17px;
 }
 
-/* Reveal on scroll */
 .reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
 .reveal.in { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) {
@@ -132,9 +127,7 @@ section { padding: 120px 0; position: relative; }
   html { scroll-behavior: auto; }
 }
 
-/* =========================================================
-   NAVBAR
-   ========================================================= */
+
 .nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 50;
   height: var(--nav-h);
@@ -216,9 +209,7 @@ section { padding: 120px 0; position: relative; }
   .nav-links.open a { padding: 12px 14px; }
 }
 
-/* =========================================================
-   HERO
-   ========================================================= */
+
 .hero {
   position: relative;
   min-height: 100vh;
@@ -360,9 +351,7 @@ section { padding: 120px 0; position: relative; }
 }
 @keyframes scrollPulse { 0%,100% { opacity: .35; transform: scaleY(.8);} 50% { opacity: 1; transform: scaleY(1);} }
 
-/* =========================================================
-   ABOUT
-   ========================================================= */
+
 .about-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 64px; align-items: start; }
 @media (max-width: 860px) { .about-grid { grid-template-columns: 1fr; gap: 40px; } }
 
@@ -431,9 +420,7 @@ section { padding: 120px 0; position: relative; }
 }
 .avatar-tag .on { color: var(--accent); }
 
-/* =========================================================
-   EXPERIENCE TIMELINE
-   ========================================================= */
+
 .timeline {
   position: relative;
   padding: 20px 0;
@@ -507,9 +494,7 @@ section { padding: 120px 0; position: relative; }
   .tl-item:nth-child(odd) { text-align: left; }
 }
 
-/* =========================================================
-   PROJECTS
-   ========================================================= */
+
 .projects-grid {
   display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px;
 }
@@ -591,7 +576,6 @@ section { padding: 120px 0; position: relative; }
 .proj-link svg { width: 14px; height: 14px; }
 .proj-link:hover { color: var(--accent); border-color: var(--accent); background: var(--accent-soft); }
 
-/* Per-card banner gradients */
 .banner-1 { background: linear-gradient(135deg, #0ea5e9, #22d3ee 60%, #2dd4bf); }
 .banner-2 { background: linear-gradient(135deg, #6366f1, #a855f7 60%, #ec4899); }
 .banner-3 { background: linear-gradient(135deg, #f59e0b, #ef4444 60%, #d946ef); }
@@ -599,9 +583,7 @@ section { padding: 120px 0; position: relative; }
 .banner-5 { background: linear-gradient(135deg, #0ea5e9, #3b82f6 60%, #6366f1); }
 .banner-6 { background: linear-gradient(135deg, #ec4899, #d946ef 60%, #a855f7); }
 
-/* =========================================================
-   SKILLS
-   ========================================================= */
+
 .skills-grid {
   display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px;
 }
@@ -643,9 +625,7 @@ section { padding: 120px 0; position: relative; }
   background: var(--accent);
 }
 
-/* =========================================================
-   EDUCATION
-   ========================================================= */
+
 .edu-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 @media (max-width: 900px) { .edu-grid { grid-template-columns: 1fr; } }
 .edu-card {
@@ -682,9 +662,7 @@ section { padding: 120px 0; position: relative; }
   display: flex; justify-content: space-between;
 }
 
-/* =========================================================
-   CONTACT
-   ========================================================= */
+
 .contact-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 48px; align-items: start; }
 @media (max-width: 860px) { .contact-grid { grid-template-columns: 1fr; gap: 36px; } }
 
@@ -762,9 +740,7 @@ section { padding: 120px 0; position: relative; }
   min-height: 1.2em;
 }
 
-/* =========================================================
-   FOOTER
-   ========================================================= */
+
 footer {
   border-top: 1px solid var(--border);
   padding: 40px 0 32px;
@@ -804,9 +780,7 @@ footer {
 .to-top:hover { transform: translateY(-3px); }
 .to-top svg { width: 18px; height: 18px; }
 
-/* =========================================================
-   SCROLL PROGRESS BAR
-   ========================================================= */
+
 #progress-bar {
   position: fixed; top: 0; left: 0; z-index: 200;
   height: 3px; width: 0%;
@@ -815,9 +789,7 @@ footer {
   transition: width .08s linear;
 }
 
-/* =========================================================
-   COPY EMAIL BUTTON
-   ========================================================= */
+
 .copy-btn {
   margin-left: auto;
   display: inline-flex; align-items: center;
@@ -830,9 +802,7 @@ footer {
 .copy-btn.copied { color: var(--accent); border-color: var(--accent); background: var(--accent-soft); }
 .copy-btn svg { width: 12px; height: 12px; margin-right: 4px; }
 
-/* =========================================================
-   DEAD / COMING-SOON PROJECT LINKS
-   ========================================================= */
+
 .proj-link[aria-disabled="true"] {
   opacity: .45;
   cursor: not-allowed;
@@ -856,9 +826,7 @@ footer {
 }
 .proj-link-wip:hover::after { opacity: 1; }
 
-/* =========================================================
-   LIGHT MODE — card lift & extra polish
-   ========================================================= */
+
 [data-theme="light"] .tl-card,
 [data-theme="light"] .proj-card,
 [data-theme="light"] .skill-cat,
@@ -870,15 +838,12 @@ footer {
 [data-theme="light"] .brand-mark { color: #fff; }
 [data-theme="light"] .btn-primary { color: #fff; }
 </style>
-<base target="_blank">
 </head>
 <body>
 
 <div id="progress-bar" role="progressbar" aria-hidden="true"></div>
 
-<!-- =========================================================
-     NAVBAR
-     ========================================================= -->
+
 <nav class="nav" id="nav">
   <div class="container nav-inner">
     <a href="#home" class="brand" aria-label="Home">
@@ -907,9 +872,7 @@ footer {
   </div>
 </nav>
 
-<!-- =========================================================
-     HERO
-     ========================================================= -->
+
 <header class="hero" id="home">
   <div class="hero-bg">
     <div class="grid"></div>
@@ -971,9 +934,7 @@ footer {
   </div>
 </header>
 
-<!-- =========================================================
-     ABOUT
-     ========================================================= -->
+
 <section id="about">
   <div class="container">
     <p class="section-eyebrow reveal">// 01. about</p>
@@ -1000,7 +961,7 @@ footer {
 
         <div class="fun-facts">
           <div class="fact"><div class="num" data-count="3" data-suffix="+">0</div><div class="lbl">years building software</div></div>
-          <div class="fact"><div class="num" data-count="5">0</div><div class="lbl">companies shipped for</div></div>
+          <div class="fact"><div class="num" data-count="4">0</div><div class="lbl">companies shipped for</div></div>
           <div class="fact"><div class="num" data-count="3">0</div><div class="lbl">countries worked in</div></div>
           <div class="fact"><div class="num">∞</div><div class="lbl">cups of coffee debugged</div></div>
         </div>
@@ -1020,9 +981,7 @@ footer {
   </div>
 </section>
 
-<!-- =========================================================
-     EXPERIENCE
-     ========================================================= -->
+
 <section id="experience">
   <div class="container">
     <p class="section-eyebrow reveal">// 02. experience</p>
@@ -1036,9 +995,9 @@ footer {
           <h3 class="tl-role">Full-Stack Developer</h3>
           <div class="tl-company">@ Winco Canada</div>
           <ul class="tl-bullets">
-            <li>Built an internal web platform to manage company-wide Excel files and data flows</li>
-            <li>Automated repetitive data processing workflows across teams</li>
-            <li>Owned the project from architecture to deployment</li>
+            <li>Migrated 20+ users off fragmented Google Sheets and Drive workflows into a single centralized platform, eliminating manual file-sharing entirely</li>
+            <li>Automated data processing and validation pipelines, unlocking real-time dashboards, automated report generation, and dynamic form auto-fill</li>
+            <li>Owned the full stack from architecture to deployment — Angular, Spring Boot, Firebase, and MySQL</li>
           </ul>
           <div class="tl-stack">
             <span class="tag">Angular</span><span class="tag">Spring Boot</span><span class="tag">Firebase</span><span class="tag">MySQL</span>
@@ -1111,9 +1070,7 @@ footer {
   </div>
 </section>
 
-<!-- =========================================================
-     PROJECTS
-     ========================================================= -->
+
 <section id="projects">
   <div class="container">
     <p class="section-eyebrow reveal">// 03. projects</p>
@@ -1122,56 +1079,55 @@ footer {
 
     <div class="projects-grid">
 
-      <!-- Winco Canada — internal platform -->
       <article class="proj-card reveal">
         <div class="proj-banner banner-1">
           <span class="label mono">/ internal tool</span>
           <svg class="proj-mockup" viewBox="0 0 320 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Header row -->
+
             <rect x="16" y="22" width="288" height="22" rx="4" fill="rgba(255,255,255,0.22)"/>
             <rect x="24" y="28" width="44" height="8" rx="2" fill="rgba(255,255,255,0.65)"/>
             <rect x="90" y="28" width="56" height="8" rx="2" fill="rgba(255,255,255,0.55)"/>
             <rect x="168" y="28" width="48" height="8" rx="2" fill="rgba(255,255,255,0.65)"/>
             <rect x="244" y="28" width="40" height="8" rx="2" fill="rgba(255,255,255,0.55)"/>
-            <!-- Column dividers -->
+
             <line x1="82" y1="22" x2="82" y2="158" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
             <line x1="160" y1="22" x2="160" y2="158" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
             <line x1="236" y1="22" x2="236" y2="158" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
-            <!-- Row 1 -->
+
             <rect x="16" y="50" width="288" height="18" rx="2" fill="rgba(255,255,255,0.07)"/>
             <rect x="24" y="55" width="34" height="6" rx="2" fill="rgba(255,255,255,0.35)"/>
             <rect x="90" y="55" width="50" height="6" rx="2" fill="rgba(255,255,255,0.28)"/>
             <rect x="168" y="55" width="38" height="6" rx="2" fill="rgba(255,255,255,0.35)"/>
             <rect x="244" y="55" width="28" height="6" rx="2" fill="rgba(255,255,255,0.28)"/>
-            <!-- Row 2 — highlighted -->
+
             <rect x="16" y="72" width="288" height="18" rx="2" fill="rgba(255,255,255,0.17)"/>
             <rect x="24" y="77" width="38" height="6" rx="2" fill="rgba(255,255,255,0.7)"/>
             <rect x="90" y="77" width="60" height="6" rx="2" fill="rgba(255,255,255,0.6)"/>
             <rect x="168" y="77" width="44" height="6" rx="2" fill="rgba(255,255,255,0.7)"/>
             <rect x="244" y="77" width="32" height="6" rx="2" fill="rgba(255,255,255,0.6)"/>
-            <!-- Row 3 -->
+
             <rect x="16" y="94" width="288" height="18" rx="2" fill="rgba(255,255,255,0.05)"/>
             <rect x="24" y="99" width="30" height="6" rx="2" fill="rgba(255,255,255,0.28)"/>
             <rect x="90" y="99" width="44" height="6" rx="2" fill="rgba(255,255,255,0.22)"/>
             <rect x="168" y="99" width="52" height="6" rx="2" fill="rgba(255,255,255,0.28)"/>
-            <!-- Row 4 -->
+
             <rect x="16" y="116" width="288" height="18" rx="2" fill="rgba(255,255,255,0.07)"/>
             <rect x="24" y="121" width="42" height="6" rx="2" fill="rgba(255,255,255,0.3)"/>
             <rect x="90" y="121" width="34" height="6" rx="2" fill="rgba(255,255,255,0.24)"/>
             <rect x="168" y="121" width="40" height="6" rx="2" fill="rgba(255,255,255,0.3)"/>
             <rect x="244" y="121" width="36" height="6" rx="2" fill="rgba(255,255,255,0.24)"/>
-            <!-- Row 5 -->
+
             <rect x="16" y="138" width="288" height="18" rx="2" fill="rgba(255,255,255,0.04)"/>
             <rect x="24" y="143" width="28" height="6" rx="2" fill="rgba(255,255,255,0.22)"/>
             <rect x="90" y="143" width="48" height="6" rx="2" fill="rgba(255,255,255,0.18)"/>
-            <!-- Upload pill -->
+
             <rect x="212" y="156" width="92" height="18" rx="9" fill="rgba(255,255,255,0.22)"/>
             <rect x="226" y="161" width="64" height="6" rx="2" fill="rgba(255,255,255,0.65)"/>
           </svg>
         </div>
         <div class="proj-body">
           <h3 class="proj-title">Winco Canada Data Platform</h3>
-          <p class="proj-desc">Replaced a fragmented mess of emailed Excel files with a centralized platform that gives every team controlled, auditable access to live data. Built solo from architecture to deployment.</p>
+          <p class="proj-desc">Migrated 20+ users off fragmented Google Sheets and Drive workflows into a single centralized platform with real-time dashboards, automated reports, and dynamic form auto-fill. Built solo from architecture to deployment.</p>
           <div class="proj-tags">
             <span class="tag">Angular</span><span class="tag">Spring Boot</span><span class="tag">Firebase</span><span class="tag">MySQL</span>
           </div>
@@ -1183,12 +1139,11 @@ footer {
         </div>
       </article>
 
-      <!-- LCR Auto École — VNB-IT -->
       <article class="proj-card reveal">
         <div class="proj-banner banner-2">
           <span class="label mono">/ multi-role platform</span>
           <svg class="proj-mockup" viewBox="0 0 320 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Student card -->
+
             <rect x="12" y="18" width="90" height="148" rx="8" fill="rgba(255,255,255,0.13)"/>
             <circle cx="57" cy="56" r="18" fill="rgba(255,255,255,0.18)"/>
             <circle cx="57" cy="50" r="8" fill="rgba(255,255,255,0.38)"/>
@@ -1201,7 +1156,7 @@ footer {
             <rect x="20" y="127" width="50" height="5" rx="2" fill="rgba(255,255,255,0.14)"/>
             <rect x="20" y="138" width="58" height="5" rx="2" fill="rgba(255,255,255,0.18)"/>
             <rect x="20" y="149" width="40" height="5" rx="2" fill="rgba(255,255,255,0.12)"/>
-            <!-- Instructor card — slightly elevated -->
+
             <rect x="115" y="10" width="90" height="156" rx="8" fill="rgba(255,255,255,0.20)"/>
             <circle cx="160" cy="50" r="18" fill="rgba(255,255,255,0.24)"/>
             <circle cx="160" cy="44" r="8" fill="rgba(255,255,255,0.48)"/>
@@ -1213,7 +1168,7 @@ footer {
             <rect x="123" y="122" width="68" height="5" rx="2" fill="rgba(255,255,255,0.2)"/>
             <rect x="123" y="134" width="46" height="5" rx="2" fill="rgba(255,255,255,0.14)"/>
             <rect x="123" y="146" width="62" height="5" rx="2" fill="rgba(255,255,255,0.2)"/>
-            <!-- Admin card -->
+
             <rect x="218" y="18" width="90" height="148" rx="8" fill="rgba(255,255,255,0.13)"/>
             <circle cx="263" cy="56" r="18" fill="rgba(255,255,255,0.18)"/>
             <circle cx="263" cy="50" r="8" fill="rgba(255,255,255,0.38)"/>
@@ -1247,38 +1202,37 @@ footer {
         </div>
       </article>
 
-      <!-- Univers France Succès — VNB-IT -->
       <article class="proj-card reveal">
         <div class="proj-banner banner-3">
           <span class="label mono">/ multi-role platform</span>
           <svg class="proj-mockup" viewBox="0 0 320 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Role tabs -->
+
             <rect x="16" y="16" width="72" height="22" rx="11" fill="rgba(255,255,255,0.32)"/>
             <rect x="94" y="16" width="64" height="22" rx="11" fill="rgba(255,255,255,0.14)"/>
             <rect x="164" y="16" width="56" height="22" rx="11" fill="rgba(255,255,255,0.14)"/>
             <rect x="24" y="22" width="56" height="8" rx="2" fill="rgba(255,255,255,0.75)"/>
             <rect x="100" y="22" width="52" height="8" rx="2" fill="rgba(255,255,255,0.45)"/>
             <rect x="170" y="22" width="44" height="8" rx="2" fill="rgba(255,255,255,0.45)"/>
-            <!-- Search bar -->
+
             <rect x="16" y="46" width="200" height="20" rx="6" fill="rgba(255,255,255,0.14)"/>
             <rect x="24" y="52" width="110" height="7" rx="2" fill="rgba(255,255,255,0.38)"/>
             <rect x="224" y="46" width="80" height="20" rx="6" fill="rgba(255,255,255,0.22)"/>
             <rect x="232" y="52" width="64" height="7" rx="2" fill="rgba(255,255,255,0.6)"/>
-            <!-- Listing 1 -->
+
             <rect x="16" y="74" width="288" height="30" rx="6" fill="rgba(255,255,255,0.10)"/>
             <circle cx="34" cy="89" r="9" fill="rgba(255,255,255,0.22)"/>
             <rect x="50" y="82" width="120" height="7" rx="2" fill="rgba(255,255,255,0.55)"/>
             <rect x="50" y="93" width="80" height="5" rx="2" fill="rgba(255,255,255,0.28)"/>
             <rect x="242" y="83" width="54" height="14" rx="7" fill="rgba(255,255,255,0.18)"/>
             <rect x="250" y="87" width="38" height="6" rx="2" fill="rgba(255,255,255,0.55)"/>
-            <!-- Listing 2 — active -->
+
             <rect x="16" y="110" width="288" height="30" rx="6" fill="rgba(255,255,255,0.20)"/>
             <circle cx="34" cy="125" r="9" fill="rgba(255,255,255,0.35)"/>
             <rect x="50" y="118" width="140" height="7" rx="2" fill="rgba(255,255,255,0.75)"/>
             <rect x="50" y="129" width="90" height="5" rx="2" fill="rgba(255,255,255,0.45)"/>
             <rect x="238" y="119" width="58" height="14" rx="7" fill="rgba(255,255,255,0.32)"/>
             <rect x="246" y="123" width="42" height="6" rx="2" fill="rgba(255,255,255,0.75)"/>
-            <!-- Listing 3 -->
+
             <rect x="16" y="146" width="288" height="30" rx="6" fill="rgba(255,255,255,0.07)"/>
             <circle cx="34" cy="161" r="9" fill="rgba(255,255,255,0.17)"/>
             <rect x="50" y="154" width="100" height="7" rx="2" fill="rgba(255,255,255,0.38)"/>
@@ -1305,12 +1259,11 @@ footer {
         </div>
       </article>
 
-      <!-- IDSM — Institut Pasteur -->
       <article class="proj-card reveal">
         <div class="proj-banner banner-4">
           <span class="label mono">/ bureau d'études</span>
           <svg class="proj-mockup" viewBox="0 0 320 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Navbar -->
+
             <rect x="0" y="0" width="320" height="22" rx="0" fill="rgba(255,255,255,0.10)"/>
             <rect x="12" y="7" width="28" height="8" rx="2" fill="rgba(255,255,255,0.70)"/>
             <rect x="180" y="8" width="24" height="6" rx="2" fill="rgba(255,255,255,0.30)"/>
@@ -1319,27 +1272,26 @@ footer {
             <rect x="278" y="5" width="30" height="12" rx="6" fill="rgba(255,255,255,0.25)"/>
             <rect x="284" y="8" width="18" height="6" rx="2" fill="rgba(255,255,255,0.65)"/>
             <!-- Hero text block -->
-            <rect x="16" y="32" width="120" height="10" rx="3" fill="rgba(255,255,255,0.75)"/>
+
             <rect x="16" y="48" width="180" height="7" rx="2" fill="rgba(255,255,255,0.35)"/>
             <rect x="16" y="59" width="150" height="7" rx="2" fill="rgba(255,255,255,0.25)"/>
             <rect x="16" y="74" width="60" height="14" rx="7" fill="rgba(255,255,255,0.30)"/>
             <rect x="84" y="74" width="60" height="14" rx="7" fill="rgba(255,255,255,0.15)"/>
-            <!-- Divider -->
+
             <line x1="16" y1="100" x2="304" y2="100" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-            <!-- Service cards row -->
-            <!-- Card 1 — BET Structure -->
+
             <rect x="16" y="108" width="84" height="60" rx="6" fill="rgba(255,255,255,0.13)"/>
             <rect x="24" y="116" width="16" height="16" rx="4" fill="rgba(255,255,255,0.22)"/>
             <rect x="24" y="138" width="56" height="6" rx="2" fill="rgba(255,255,255,0.60)"/>
             <rect x="24" y="149" width="48" height="4" rx="2" fill="rgba(255,255,255,0.22)"/>
             <rect x="24" y="156" width="38" height="4" rx="2" fill="rgba(255,255,255,0.16)"/>
-            <!-- Card 2 — Diagnostic (elevated) -->
+
             <rect x="118" y="104" width="84" height="64" rx="6" fill="rgba(255,255,255,0.22)"/>
             <rect x="126" y="112" width="16" height="16" rx="4" fill="rgba(255,255,255,0.35)"/>
             <rect x="126" y="134" width="56" height="6" rx="2" fill="rgba(255,255,255,0.80)"/>
             <rect x="126" y="145" width="48" height="4" rx="2" fill="rgba(255,255,255,0.38)"/>
             <rect x="126" y="152" width="38" height="4" rx="2" fill="rgba(255,255,255,0.28)"/>
-            <!-- Card 3 — Maîtrise d'œuvre -->
+
             <rect x="220" y="108" width="84" height="60" rx="6" fill="rgba(255,255,255,0.13)"/>
             <rect x="228" y="116" width="16" height="16" rx="4" fill="rgba(255,255,255,0.22)"/>
             <rect x="228" y="138" width="56" height="6" rx="2" fill="rgba(255,255,255,0.60)"/>
@@ -1364,31 +1316,29 @@ footer {
         </div>
       </article>
 
-      <!-- Bluva — e-commerce -->
       <article class="proj-card reveal">
         <div class="proj-banner banner-5">
           <span class="label mono">/ e-commerce</span>
           <svg class="proj-mockup" viewBox="0 0 320 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Navbar -->
+
             <rect x="0" y="0" width="320" height="20" fill="rgba(255,255,255,0.10)"/>
             <rect x="12" y="6" width="32" height="8" rx="2" fill="rgba(255,255,255,0.70)"/>
             <rect x="160" y="6" width="20" height="8" rx="2" fill="rgba(255,255,255,0.28)"/>
             <rect x="188" y="6" width="20" height="8" rx="2" fill="rgba(255,255,255,0.28)"/>
             <rect x="216" y="6" width="20" height="8" rx="2" fill="rgba(255,255,255,0.28)"/>
-            <!-- Cart icon -->
+
             <rect x="278" y="4" width="28" height="14" rx="7" fill="rgba(255,255,255,0.22)"/>
             <rect x="284" y="7" width="16" height="6" rx="2" fill="rgba(255,255,255,0.65)"/>
-            <!-- Hero banner -->
+
             <rect x="8" y="26" width="200" height="44" rx="6" fill="rgba(255,255,255,0.18)"/>
             <rect x="16" y="34" width="100" height="8" rx="2" fill="rgba(255,255,255,0.75)"/>
             <rect x="16" y="46" width="140" height="5" rx="2" fill="rgba(255,255,255,0.35)"/>
             <rect x="16" y="55" width="50" height="10" rx="5" fill="rgba(255,255,255,0.35)"/>
-            <!-- Badge -->
+
             <rect x="218" y="26" width="92" height="44" rx="6" fill="rgba(255,255,255,0.12)"/>
             <rect x="228" y="36" width="72" height="8" rx="2" fill="rgba(255,255,255,0.55)"/>
             <rect x="236" y="48" width="56" height="6" rx="2" fill="rgba(255,255,255,0.28)"/>
-            <!-- Product cards row -->
-            <!-- Card 1 -->
+
             <rect x="8" y="78" width="72" height="92" rx="6" fill="rgba(255,255,255,0.13)"/>
             <rect x="8" y="78" width="72" height="48" rx="6" fill="rgba(255,255,255,0.18)"/>
             <circle cx="44" cy="102" r="16" fill="rgba(255,255,255,0.20)"/>
@@ -1396,7 +1346,7 @@ footer {
             <rect x="20" y="142" width="32" height="5" rx="2" fill="rgba(255,255,255,0.35)"/>
             <rect x="16" y="153" width="56" height="12" rx="6" fill="rgba(255,255,255,0.22)"/>
             <rect x="24" y="156" width="40" height="5" rx="2" fill="rgba(255,255,255,0.60)"/>
-            <!-- Card 2 — featured -->
+
             <rect x="88" y="74" width="72" height="96" rx="6" fill="rgba(255,255,255,0.22)"/>
             <rect x="88" y="74" width="72" height="48" rx="6" fill="rgba(255,255,255,0.28)"/>
             <circle cx="124" cy="98" r="16" fill="rgba(255,255,255,0.32)"/>
@@ -1404,7 +1354,7 @@ footer {
             <rect x="100" y="138" width="32" height="5" rx="2" fill="rgba(255,255,255,0.45)"/>
             <rect x="96" y="149" width="56" height="14" rx="7" fill="rgba(255,255,255,0.32)"/>
             <rect x="104" y="153" width="40" height="6" rx="2" fill="rgba(255,255,255,0.75)"/>
-            <!-- Card 3 -->
+
             <rect x="168" y="78" width="72" height="92" rx="6" fill="rgba(255,255,255,0.13)"/>
             <rect x="168" y="78" width="72" height="48" rx="6" fill="rgba(255,255,255,0.18)"/>
             <circle cx="204" cy="102" r="16" fill="rgba(255,255,255,0.20)"/>
@@ -1412,7 +1362,7 @@ footer {
             <rect x="180" y="142" width="32" height="5" rx="2" fill="rgba(255,255,255,0.35)"/>
             <rect x="176" y="153" width="56" height="12" rx="6" fill="rgba(255,255,255,0.22)"/>
             <rect x="184" y="156" width="40" height="5" rx="2" fill="rgba(255,255,255,0.60)"/>
-            <!-- Card 4 -->
+
             <rect x="248" y="78" width="64" height="92" rx="6" fill="rgba(255,255,255,0.10)"/>
             <rect x="248" y="78" width="64" height="48" rx="6" fill="rgba(255,255,255,0.14)"/>
             <circle cx="280" cy="102" r="14" fill="rgba(255,255,255,0.16)"/>
@@ -1434,12 +1384,11 @@ footer {
         </div>
       </article>
 
-      <!-- AutoSmart — Espace Élève -->
       <article class="proj-card reveal">
         <div class="proj-banner banner-6">
           <span class="label mono">/ student portal</span>
           <svg class="proj-mockup" viewBox="0 0 320 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Sidebar -->
+
             <rect x="12" y="12" width="56" height="156" rx="8" fill="rgba(255,255,255,0.12)"/>
             <circle cx="40" cy="38" r="12" fill="rgba(255,255,255,0.30)"/>
             <rect x="20" y="58" width="36" height="6" rx="3" fill="rgba(255,255,255,0.45)"/>
@@ -1447,25 +1396,23 @@ footer {
             <rect x="20" y="86" width="36" height="6" rx="3" fill="rgba(255,255,255,0.22)"/>
             <rect x="20" y="100" width="36" height="6" rx="3" fill="rgba(255,255,255,0.22)"/>
             <rect x="20" y="114" width="36" height="6" rx="3" fill="rgba(255,255,255,0.22)"/>
-            <!-- Main area -->
-            <!-- Progress bar card -->
+
             <rect x="78" y="12" width="230" height="44" rx="8" fill="rgba(255,255,255,0.16)"/>
             <rect x="90" y="22" width="80" height="7" rx="3" fill="rgba(255,255,255,0.70)"/>
             <rect x="90" y="36" width="160" height="6" rx="3" fill="rgba(255,255,255,0.18)"/>
             <rect x="90" y="36" width="104" height="6" rx="3" fill="rgba(255,255,255,0.55)"/>
-            <!-- Lesson booking card -->
             <rect x="78" y="64" width="110" height="58" rx="8" fill="rgba(255,255,255,0.13)"/>
             <rect x="88" y="74" width="60" height="6" rx="3" fill="rgba(255,255,255,0.60)"/>
             <rect x="88" y="86" width="82" height="5" rx="2" fill="rgba(255,255,255,0.22)"/>
             <rect x="88" y="96" width="70" height="5" rx="2" fill="rgba(255,255,255,0.18)"/>
             <rect x="88" y="108" width="50" height="10" rx="5" fill="rgba(255,255,255,0.32)"/>
-            <!-- Code exam card -->
+
             <rect x="196" y="64" width="112" height="58" rx="8" fill="rgba(255,255,255,0.13)"/>
             <rect x="206" y="74" width="68" height="6" rx="3" fill="rgba(255,255,255,0.60)"/>
             <rect x="206" y="86" width="44" height="14" rx="4" fill="rgba(255,255,255,0.20)"/>
             <rect x="256" y="86" width="44" height="14" rx="4" fill="rgba(255,255,255,0.14)"/>
             <rect x="206" y="106" width="92" height="6" rx="3" fill="rgba(255,255,255,0.22)"/>
-            <!-- Documents card -->
+
             <rect x="78" y="130" width="230" height="38" rx="8" fill="rgba(255,255,255,0.10)"/>
             <rect x="90" y="140" width="50" height="6" rx="3" fill="rgba(255,255,255,0.55)"/>
             <rect x="90" y="152" width="36" height="6" rx="3" fill="rgba(255,255,255,0.20)"/>
@@ -1493,9 +1440,7 @@ footer {
   </div>
 </section>
 
-<!-- =========================================================
-     SKILLS
-     ========================================================= -->
+
 <section id="skills">
   <div class="container">
     <p class="section-eyebrow reveal">// 04. skills</p>
@@ -1596,10 +1541,7 @@ footer {
   </div>
 </section>
 
-<!-- =========================================================
-     EDUCATION
-     ========================================================= -->
-<section id="education">
+
   <div class="container">
     <p class="section-eyebrow reveal">// 05. education</p>
     <h2 class="section-title reveal">Education</h2>
@@ -1628,9 +1570,7 @@ footer {
   </div>
 </section>
 
-<!-- =========================================================
-     CONTACT
-     ========================================================= -->
+
 <section id="contact">
   <div class="container">
     <p class="section-eyebrow reveal">// 06. contact</p>
@@ -1702,9 +1642,7 @@ footer {
   </div>
 </section>
 
-<!-- =========================================================
-     FOOTER
-     ========================================================= -->
+
 <footer>
   <div class="container footer-inner">
     <div class="foot-copy">© <span id="footerYear">2026</span> Nassr Eddine El Himeur · built with <span class="heart">♥</span> in Meknes</div>
@@ -1719,15 +1657,12 @@ footer {
   </div>
 </footer>
 
-<!-- Back-to-top -->
 <button class="to-top" id="toTop" aria-label="Back to top">
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
 </button>
 
 <script>
-/* =========================================================
-   THEME TOGGLE (persists in localStorage)
-   ========================================================= */
+
 (function () {
   const saved = localStorage.getItem('ne-theme');
   if (saved) document.documentElement.setAttribute('data-theme', saved);
@@ -1749,9 +1684,7 @@ footer {
   });
 })();
 
-/* =========================================================
-   MOBILE NAV
-   ========================================================= */
+
 (function () {
   const toggle = document.getElementById('navToggle');
   const links  = document.getElementById('navLinks');
@@ -1761,9 +1694,7 @@ footer {
   });
 })();
 
-/* =========================================================
-   NAVBAR SCROLLED STATE + SECTION HIGHLIGHT
-   ========================================================= */
+
 (function () {
   const nav = document.getElementById('nav');
   const links = [...document.querySelectorAll('#navLinks a')];
@@ -1780,9 +1711,7 @@ footer {
   onScroll();
 })();
 
-/* =========================================================
-   TYPING EFFECT (hero subtitle)
-   ========================================================= */
+
 (function () {
   const el = document.getElementById('typed');
   const text = 'Full-Stack Developer';
@@ -1796,9 +1725,7 @@ footer {
   tick();
 })();
 
-/* =========================================================
-   REVEAL ON SCROLL
-   ========================================================= */
+
 (function () {
   const io = new IntersectionObserver((entries) => {
     entries.forEach((e, i) => {
@@ -1811,9 +1738,7 @@ footer {
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 })();
 
-/* =========================================================
-   HERO PARTICLES (lightweight canvas)
-   ========================================================= */
+
 (function () {
   const c = document.getElementById('particles');
   if (!c) return;
@@ -1865,7 +1790,7 @@ footer {
       ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
       ctx.fill();
     }
-    // connecting lines
+
     for (let i = 0; i < pts.length; i++) {
       for (let j = i + 1; j < pts.length; j++) {
         const a = pts[i], b = pts[j];
@@ -1888,9 +1813,7 @@ footer {
   window.addEventListener('resize', init);
 })();
 
-/* =========================================================
-   BACK TO TOP
-   ========================================================= */
+
 (function () {
   const btn = document.getElementById('toTop');
   window.addEventListener('scroll', () => {
@@ -1899,11 +1822,7 @@ footer {
   btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 })();
 
-/* =========================================================
-   CONTACT FORM — Formspree
-   Sign up at formspree.io, create a form, then replace
-   YOUR_FORM_ID below with your actual form ID.
-   ========================================================= */
+
 (function () {
   const FORMSPREE_ID = 'mnjlllay';
   const form = document.getElementById('contactForm');
@@ -1961,9 +1880,7 @@ footer {
   });
 })();
 
-/* =========================================================
-   SCROLL PROGRESS BAR
-   ========================================================= */
+
 (function () {
   const bar = document.getElementById('progress-bar');
   window.addEventListener('scroll', () => {
@@ -1973,9 +1890,7 @@ footer {
   }, { passive: true });
 })();
 
-/* =========================================================
-   ANIMATED COUNTERS (About stats)
-   ========================================================= */
+
 (function () {
   const nums = document.querySelectorAll('.num[data-count]');
   if (!nums.length) return;
@@ -2002,9 +1917,7 @@ footer {
   nums.forEach(el => io.observe(el));
 })();
 
-/* =========================================================
-   COPY EMAIL TO CLIPBOARD
-   ========================================================= */
+
 (function () {
   const btn = document.getElementById('copyEmail');
   if (!btn) return;
@@ -2021,9 +1934,7 @@ footer {
   });
 })();
 
-/* =========================================================
-   DYNAMIC FOOTER YEAR
-   ========================================================= */
+
 (function () {
   const yr = document.getElementById('footerYear');
   if (yr) yr.textContent = new Date().getFullYear();
