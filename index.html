@@ -870,6 +870,7 @@ footer {
 [data-theme="light"] .brand-mark { color: #fff; }
 [data-theme="light"] .btn-primary { color: #fff; }
 </style>
+<base target="_blank">
 </head>
 <body>
 
@@ -942,7 +943,7 @@ footer {
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 4 16 12 8 20"/></svg>
         View My Work
       </a>
-      <a href="Nassr_Eddine_CV.pdf" class="btn btn-ghost" id="downloadCV" download="Nassr_Eddine_CV.pdf">
+      <a href="Nassr_Eddine_CV_EN.pdf" class="btn btn-ghost" id="downloadCV" download="Nassr_Eddine_CV_EN.pdf">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         Download CV
       </a>
@@ -951,7 +952,7 @@ footer {
     <div class="hero-meta mono">
       <span><span class="k">//</span> Meknes, Morocco</span>
       <span><span class="k">//</span> GMT+1</span>
-      <span><span class="k">//</span> 4+ yrs building software</span>
+      <span><span class="k">//</span> 3+ yrs building software</span>
     </div>
 
     <div class="tech-pills" aria-label="Primary stack">
@@ -981,7 +982,7 @@ footer {
     <div class="about-grid">
       <div class="bio reveal">
         <p>
-          I'm a <strong>Full-Stack Developer</strong> with four years of hands-on
+          I'm a <strong>Full-Stack Developer</strong> with three years of hands-on
           experience architecting web platforms across Morocco, France, and Senegal.
           I care about clean APIs, thoughtful UIs, and making CI/CD just work.
         </p>
@@ -998,7 +999,7 @@ footer {
         </p>
 
         <div class="fun-facts">
-          <div class="fact"><div class="num" data-count="4" data-suffix="+">0</div><div class="lbl">years building software</div></div>
+          <div class="fact"><div class="num" data-count="3" data-suffix="+">0</div><div class="lbl">years building software</div></div>
           <div class="fact"><div class="num" data-count="5">0</div><div class="lbl">companies shipped for</div></div>
           <div class="fact"><div class="num" data-count="3">0</div><div class="lbl">countries worked in</div></div>
           <div class="fact"><div class="num">∞</div><div class="lbl">cups of coffee debugged</div></div>
@@ -1996,7 +1997,7 @@ footer {
     entries.forEach(e => {
       if (e.isIntersecting) { run(e.target); io.unobserve(e.target); }
     });
-  }, { threshold: 0.5 });
+  }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
 
   nums.forEach(el => io.observe(el));
 })();
