@@ -19,22 +19,22 @@
 <style>
 
 :root {
-  --bg: #0a0812;
-  --bg-elev: #0f0b1a;
-  --surface: #130e20;
-  --surface-2: #1a1230;
-  --border: #261a3d;
-  --border-strong: #352553;
-  --text: #ede9f8;
-  --text-dim: #b0a6cc;
-  --text-muted: #7a6e99;
-  --accent: #a855f7;       
-  --accent-2: #6366f1;     
-  --accent-soft: rgba(168, 85, 247, 0.14);
-  --accent-glow: rgba(168, 85, 247, 0.40);
+  --bg: #0a0f1e;
+  --bg-elev: #0f172a;
+  --surface: #111827;
+  --surface-2: #162033;
+  --border: #1f2a3d;
+  --border-strong: #2a3a55;
+  --text: #e6ecf5;
+  --text-dim: #aab4c5;
+  --text-muted: #7a8699;
+  --accent: #2dd4bf;       
+  --accent-2: #38bdf8;     
+  --accent-soft: rgba(45, 212, 191, 0.14);
+  --accent-glow: rgba(45, 212, 191, 0.35);
   --danger: #f87171;
-  --shadow-lg: 0 30px 60px -20px rgba(0,0,0,0.6), 0 12px 24px -12px rgba(80,0,160,0.25);
-  --shadow-md: 0 12px 28px -12px rgba(80,0,160,0.20);
+  --shadow-lg: 0 30px 60px -20px rgba(0,0,0,0.55), 0 12px 24px -12px rgba(0,0,0,0.4);
+  --shadow-md: 0 12px 28px -12px rgba(0,0,0,0.45);
   --radius: 14px;
   --radius-sm: 10px;
   --radius-lg: 20px;
@@ -43,21 +43,21 @@
   --ease: cubic-bezier(.2,.7,.2,1);
 }
 [data-theme="light"] {
-  --bg: #faf8ff;
+  --bg: #f6f8fc;
   --bg-elev: #ffffff;
   --surface: #ffffff;
-  --surface-2: #f3efff;
-  --border: #e4daf5;
-  --border-strong: #cfc0ec;
-  --text: #0f0a1e;
-  --text-dim: #3d3357;
-  --text-muted: #6b5f84;
-  --accent: #7c3aed;
-  --accent-2: #4f46e5;
-  --accent-soft: rgba(124, 58, 237, 0.10);
-  --accent-glow: rgba(124, 58, 237, 0.24);
-  --shadow-lg: 0 30px 60px -30px rgba(80, 40, 160, 0.18), 0 10px 20px -12px rgba(80,40,160,0.12);
-  --shadow-md: 0 10px 24px -14px rgba(80,40,160,0.14);
+  --surface-2: #f1f5fb;
+  --border: #e3e9f2;
+  --border-strong: #cfd7e6;
+  --text: #0b1220;
+  --text-dim: #3c485c;
+  --text-muted: #6b7689;
+  --accent: #0d9488;
+  --accent-2: #0284c7;
+  --accent-soft: rgba(13, 148, 136, 0.10);
+  --accent-glow: rgba(13, 148, 136, 0.22);
+  --shadow-lg: 0 30px 60px -30px rgba(12, 20, 40, 0.18), 0 10px 20px -12px rgba(12,20,40,0.10);
+  --shadow-md: 0 10px 24px -14px rgba(12,20,40,0.14);
 }
 
 
@@ -151,7 +151,7 @@ section { padding: 120px 0; position: relative; }
   width: 32px; height: 32px; border-radius: 9px;
   display: grid; place-items: center;
   background: linear-gradient(135deg, var(--accent), var(--accent-2));
-  color: #fff;
+  color: #061019;
   font-family: 'Fira Code', monospace;
   font-size: 13px; font-weight: 700;
   box-shadow: 0 6px 20px -6px var(--accent-glow);
@@ -301,7 +301,7 @@ section { padding: 120px 0; position: relative; }
 .btn svg { width: 16px; height: 16px; }
 .btn-primary {
   background: linear-gradient(135deg, var(--accent), var(--accent-2));
-  color: #fff;
+  color: #061019;
   box-shadow: 0 12px 28px -12px var(--accent-glow);
 }
 .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 18px 36px -14px var(--accent-glow); }
@@ -835,8 +835,8 @@ footer {
 [data-theme="light"] .fact {
   box-shadow: 0 2px 16px -6px rgba(80, 40, 160, 0.10);
 }
-[data-theme="light"] .brand-mark { color: #fff; }
-[data-theme="light"] .btn-primary { color: #fff; }
+[data-theme="light"] .brand-mark { color: #061019; }
+[data-theme="light"] .btn-primary { color: #061019; }
 </style>
 </head>
 <body>
