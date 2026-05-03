@@ -400,15 +400,10 @@ section { padding: 120px 0; position: relative; }
   border: 2px solid var(--border-strong);
   overflow: hidden;
 }
-.avatar .initials {
-  font-family: 'Fira Code', monospace;
-  font-size: clamp(64px, 12vw, 120px);
-  font-weight: 600;
-  letter-spacing: -.02em;
-  color: var(--text);
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
-  -webkit-background-clip: text; background-clip: text;
-  -webkit-text-fill-color: transparent;
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .avatar-tag {
   position: absolute; bottom: 8px; left: 50%; transform: translateX(-50%);
@@ -970,7 +965,7 @@ footer {
       <div class="reveal" style="align-self:center">
         <div class="avatar-wrap">
           <div class="avatar">
-            <span class="initials">NE</span>
+            <img src="Profile.jpeg" alt="Nassr Eddine El Himeur profile photo" />
           </div>
           <div class="avatar-tag mono">
             <span class="on">●</span> online — meknes
